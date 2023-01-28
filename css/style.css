@@ -1,0 +1,799 @@
+/* COMMON CSS START */
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    display: inline-block;
+}
+
+ol,
+ul {
+    list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+    line-height: 0.8;
+}
+
+/* COMMON CSS END */
+
+/* NAVBAR: MENU & LOGO CSS START */
+.navbar {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 999;
+}
+.sticky_header{
+    animation: smooth 1s;
+    background: linear-gradient(to right, #31241e, #4c3226);
+}
+@keyframes smooth{
+    from{
+        top: -100px;
+    }
+    to{
+        top: 0;
+    }
+}
+
+.nav-link {
+    color: #ffff;
+    text-transform: capitalize;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    padding-left: 25px !important;
+    transition: .4s;
+}
+
+.nav-link:hover {
+    color: #c7b299;
+}
+
+/* NAVBAR: MENU & LOGO CSS END */
+
+/* HEADER BANNER PART CSS START */
+#header_banner {
+    background: url(../images/header_banner.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.banner_overly {
+    background: rgba(0, 0, 0, 0.70);
+    padding: 380px 0;
+}
+
+.banner_content h3 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.banner_content h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 52px;
+    padding-top: 15px;
+    padding-bottom: 30px;
+}
+
+.banner_content p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.banner_content a {
+    margin-top: 50px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 14px;
+    color: #ffff;
+    text-transform: uppercase;
+    background-color: #998675;
+    padding: 21px 38px 18px 38px;
+    border-bottom: 3px solid #736357;
+}
+
+/* HEADER BANNER PART CSS END */
+
+/* SERVICE PART CSS START */
+#service_part {
+    padding: 80px 0;
+    /* position: relative; */
+}
+
+.service_icon i {
+    font-size: 50px;
+    color: #555555;
+    transition: .4s;
+}
+
+.service_text h3 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    transition: .4s;
+}
+
+.service_text p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    color: #8c8c8c;
+    position: relative;
+    padding: 0 15px;
+    margin-bottom: 50px;
+}
+
+.service_text p::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 70px;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #f1eee9;
+    transition: .4s;
+}
+
+.service_item:hover .service_icon i {
+    color: #c7b299;
+    cursor: pointer;
+}
+
+.service_item:hover .service_text h3 {
+    color: #c7b299;
+    cursor: pointer;
+}
+
+.service_item:hover .service_text p::after {
+    background: #c7b299;
+    width: 100px;
+    cursor: pointer;
+}
+
+.service_right_arrow {
+	position: absolute;
+	left: 0;
+	top: 70px;
+    text-align: right;
+    font-size: 20px;
+    cursor: pointer;
+    color: #c7b299;
+}
+
+.service_left_arrow {
+	position: absolute;
+	left: 0;
+	top: 70px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #c7b299;
+}
+/* SERVICE PART CSS END */
+
+/* IDEA PART CSS START */
+#idea_part {
+    padding-top: 80px;
+    background: #fbfaf8;
+}
+
+.common_heading {
+    color: #555555;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.common_text {
+    color: #8c8c8c;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    line-height: 28px;
+    padding-top: 30px;
+}
+
+.idea_part_img {
+    padding-top: 40px;
+}
+
+/* IDEA PART CSS END */
+
+/* PURCHASE PART CSS START */
+#purchase_part {
+    padding: 50px 0;
+    background: linear-gradient(to right, #31241e, #4c3226);
+}
+
+.purchase_part_text h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 28px;
+    padding-bottom: 15px;
+    color: #ffff;
+}
+
+.purchase_part_text span {
+    color: #c7b299;
+}
+
+.purchase_part_text p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: #615855;
+}
+
+.purchase_button a {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 14px;
+    color: #ffff;
+    text-transform: uppercase;
+    background-color: #998675;
+    padding: 20px 15px 17px 15px;
+    border-bottom: 3px solid #736357;
+    border-radius: 5px;
+}
+
+/* PURCHASE PART CSS END */
+
+/* PROJECT PART CSS START */
+#project_part {
+    padding: 80px 0;
+    background: #ffff;
+}
+.project_button{
+    margin-top: 40px;
+}
+.project_button button {
+    background: transparent;
+    padding: 10px 27px;
+    border: 1px solid #ebebeb;
+    border-radius: 5px;
+    color: #8c8c8c;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    /* margin-top: 40px; */
+    margin-right: 10px;
+    transition: .4s;
+}
+
+.project_button button:hover {
+    color: #ffff;
+    background: #998675;
+    border: 1px solid #998675;
+}
+
+.project_item_img {
+    position: relative;
+}
+
+.project_overly {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    left: 0;
+    top: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: .4s;
+}
+
+.link_icon {
+    font-size: 27px;
+    color: #c7b299;
+    position: absolute;
+    top: 50%;
+    left: 142px;
+    transform: translateY(-50%);
+}
+
+.search_icon {
+    font-size: 27px;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    right: 142px;
+    transform: translateY(-50%);
+}
+
+.item_shape {
+    height: 30px;
+    width: 30px;
+    background: #fbfaf8;
+    left: 30px;
+    bottom: -15px;
+    position: absolute;
+    transform: rotate(45deg);
+    transition: .4s;
+}
+
+.project_item_text {
+    padding: 30px;
+    background: #fbfaf8;
+    transition: .4s;
+}
+
+.project_item_text h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #c7b299;
+}
+
+.project_item_text p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: #d1d1d1;
+    padding-top: 15px;
+}
+
+.project_item:hover .project_overly {
+    visibility: visible;
+    opacity: 1;
+}
+
+.project_item:hover .item_shape {
+    background: #362f2d;
+}
+
+.project_item:hover .project_item_text {
+    background: #362f2d;
+}
+
+.project_item:hover .project_item_text h3 {
+    color: #fff;
+}
+
+.project_item:hover .project_item_text p {
+    color: #c7b299;
+}
+
+/* PROJECT PART CSS END */
+
+/* VIDEO PART CSS START */
+#video_part {
+    background: url(../images/video_bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.video_overly {
+    background: rgba(17, 17, 17, 0.50);
+    padding-top: 210px;
+    padding-bottom: 260px;
+}
+
+/* VIDEO PART CSS END */
+
+/* HAND PART CSS END */
+#hand_part {
+    background: #fbfaf8;
+    margin-top: 80px;
+}
+
+.hand_content {
+    margin-top: 115px;
+    padding-right: 50px;
+}
+
+.hand_content_list {
+    margin-top: 50px;
+    margin-left: 10px;
+}
+
+.hand_content_list ul li {
+    line-height: 32px;
+    color: #8c8c8c;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.hand_content_list ul li i {
+    padding-right: 30px;
+    color: #c7b299;
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+/* HAND PART CSS END */
+
+/* COUNTER PART CSS START */
+#counter_part {
+    padding-top: 70px;
+    padding-bottom: 90px;
+    background: linear-gradient(to right, #31241e, #4c3226);
+}
+
+.counter_text h3 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+}
+
+.counter_text p {
+    color: #c7b299;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.counter_text p::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    left: 50%;
+    bottom: -30px;
+    transform: translateX(-50%);
+    background: #ffff;
+}
+
+/* COUNTER PART CSS END */
+
+
+/* BLOG POSTS CSS START */
+#blog_part {
+    padding: 80px 0 143px 0;
+    position: relative;
+}
+
+.blog_top_text {
+    margin-bottom: 40px;
+}
+
+.blog_item {
+    border: 1px solid #f8f8f8;
+    margin-right: 30px;
+}
+
+.blog_img {
+    position: relative;
+}
+
+.blog_overly {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(17, 17, 17, 0.70);
+    visibility: hidden;
+    opacity: 0;
+    transition: .4s;
+}
+
+.date {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    width: 50px;
+}
+
+.date .top {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background: #363636;
+    padding: 10px 0;
+    color: #ffffff;
+    transition: .4s;
+}
+
+.date .bottom {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background: #252525;
+    padding: 12px 6px;
+    color: #ffffff;
+    transition: .4s;
+}
+
+.blog_text {
+    padding: 30px;
+    transition: .4s;
+}
+
+.blog_text h3 {
+    color: #555555;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    transition: .4s;
+}
+
+.blog_text p {
+    color: #8c8c8c;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    padding: 20px 0 27px 0;
+    line-height: 22px;
+    transition: .4s;
+}
+
+.blog_text a {
+    color: #c7b299;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.blog_text i {
+    margin-left: 10px;
+    vertical-align: middle;
+    font-size: 14px;
+}
+
+.blog_item:hover .blog_overly {
+    visibility: visible;
+    opacity: 1;
+}
+
+.blog_item:hover .date .top {
+    background: #c7b299;
+}
+
+.blog_item:hover .date .bottom {
+    background: #a48d72;
+}
+
+.blog_item:hover .blog_text {
+    background: #362f2d;
+}
+
+.blog_item:hover .blog_text h3 {
+    color: #c7b299;
+}
+
+.blog_item:hover .blog_text p {
+    color: #ffffff;
+}
+
+.blog_scroll_icon {
+    margin-top: 40px;
+    font-size: 22px;
+}
+
+.blogprev {
+	position: absolute;
+    left: 46%;
+    bottom: -100px;
+    font-size: 30px;
+}   
+
+.blognext {
+	position: absolute;
+    left: 50%;
+    bottom: -100px;
+    font-size: 30px;
+}
+
+.blogprev:hover {
+    color: #cbb79f;
+}
+
+.blognext:hover {
+    color: #cbb79f;
+}
+
+/* BLOG POSTS CSS END */
+
+/* CLIENTS CSS START */
+#clients_part {
+    background: url(../images/clients_banner.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.client_part_overly {
+    padding: 140px 0;
+    background: rgba(0, 0, 0, 0.70);
+}
+
+/* CLIENTS CSS END */
+
+/* TOP FOOTER CSS START */
+#top_footer_part{
+    padding: 80px 0;
+    background: #191919;
+}
+.company_bio p{
+    color: #555555;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    line-height: 24px;
+    padding: 30px 22px 30px 0;
+}
+.company_bio a{
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+}
+.company_bio i{
+    margin-left: 10px;
+    vertical-align: middle;
+    font-size: 14px;
+}
+.recent_posts{
+    margin-left: 20px;
+}
+
+.top_footer_heading{
+    font-family: 'Raleway', sans-serif;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.post_date{
+    color: #363636;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    padding-bottom: 10px;
+    transition: .4s;
+}
+
+.post_details{
+    color: #555555;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    padding-bottom: 23px;
+    border-bottom: 1px solid #252525;
+    transition: .4s;
+}
+
+.post_three p{
+    border-bottom: none !important;
+}
+
+.post_one:hover .post_date{
+    color: #ffffff;
+}
+
+.post_one:hover .post_details{
+    color: #c7b299;
+}
+.post_two:hover .post_date{
+    color: #ffffff;
+}
+
+.post_two:hover .post_details{
+    color: #c7b299;
+}
+.post_three:hover .post_date{
+    color: #ffffff;
+}
+
+.post_three:hover .post_details{
+    color: #c7b299;
+}
+
+.twitter_info{
+    margin-left: 20px;
+}
+
+.twitter_details{
+    color: #555555;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    padding-bottom: 10px;
+}
+.twitter_details span{
+    color: #00bff3;
+}
+.twitter_date{
+    color: #363636;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #252525;
+}
+.twitter_post_three .twitter_details span{
+    color: #ffffff;
+}
+
+.twitter_post_three .twitter_date{
+    border-bottom: none !important;
+}
+
+/* TOP FOOTER CSS END */
+
+/* FOOTER CSS START */
+#footer_part{
+    padding: 50px 0;
+    background: #111111;
+}
+.footer_left p{
+    color: #555555;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 13px;
+}
+.footer_left span{
+    color: #959595;
+    padding-right: 12px;
+}
+.footer_left p a{
+    padding: 0 12px;
+    color: #555555;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 13px;
+    transition: .4s;
+}
+.footer_left p a:hover{
+    color: #c7b299;
+}
+.footer_right p{
+    color: #555555;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 13px;
+}
+.footer_right span{
+    color: #959595;
+}
+/* FOOTER CSS END */
+
+/* BACK TO TOP BUTTON START */
+.back-to-top{
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+}
+
+.back-to-top i{
+    font-size: 30px;
+    color: #c7b299;
+}
+body{
+    overflow-x: hidden;
+}
+/* BACK TO TOP BUTTON END */
+
